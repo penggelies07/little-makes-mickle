@@ -1,5 +1,5 @@
 //获取base64图片大小，返回KB数字
-function getBase64Size(base64url) {
+exports.getBase64Size = function(base64url) {
     var str = base64url.replace('data:image/png;base64,', '');
     var equalIndex = str.indexOf('=');
     if (str.indexOf('=') > 0) {
